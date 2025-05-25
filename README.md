@@ -44,6 +44,8 @@ The system is composed of:
 
 - [FPGA based Digital Design.pdf](https://github.com/nyifvi1/FPGA-based-Digital-Design/blob/main/FPGA%20based%20Digital%20Design.pdf) – full assignment specification and ISA reference
 
+### DE2-115 FPGA Development Board
+
 ![DE2-115 Board](https://www.researchgate.net/publication/323200897/figure/fig2/AS:735540924149760@1552378030524/Altera-DE2-115-FPGA-board.jpg)
 
 *Figure: Terasic DE2-115 FPGA development board used in this project.*
