@@ -15,7 +15,7 @@ This project implements a digital system on the DE2-115 FPGA board. The design i
 The system is composed of:
 - A top-level design integrating both combinational and synchronous subparts
 - A combinational datapath that implements ALU, logic, and shift operations
-- A synchronous PWM output unit 
+- A synchronous PWM module that supports dynamic control of both frequency and duty cycle
 
 ## Input/Output
 
