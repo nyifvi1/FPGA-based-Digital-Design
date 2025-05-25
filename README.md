@@ -1,60 +1,45 @@
 # FPGA-Based Digital System Design
 
-This project implements a custom digital system on the Intel Altera DE2-115 FPGA board. The system is based on a custom ISA and is composed of a synchronous multi-cycle controller and a combinational datapath. It includes a PWM output unit and connects to board peripherals such as switches, LEDs, and 7-segment displays.
+This project implements a digital system on the DE2-115 FPGA board. The design is based on the custom ISA and includes both combinational and synchronous components. The system is fully verified in simulation and hardware using ModelSim, Quartus, and SignalTap.
 
 ## Project Structure
 
-- `DUT/` – RTL VHDL modules for the controller, datapath, and supporting logic  
-- `TB/` – Testbenches for simulation of functional behavior  
-- `SIM/` – Scripts and files for simulation setup and waveform analysis
+- DUT – RTL design files of the digital system 
+- TB – Testbench file used to simulate the full system
+- SIM – ModelSim scripts and waveform configurations
+- DOC – Project documentation: README and Lab4 report
+- Quartus – .sof, .sdc, and SignalTap setups for hardware testing
 
-## System Architecture
+## System Description
 
-The digital system is divided into two main parts:
+The system is composed of:
+- A top-level design integrating both combinational and synchronous subparts
+- A combinational datapath that implements ALU, logic, and shift operations
+- A synchronous PWM output unit 
 
-1. **Control Unit (FSM)** – Issues control signals across multiple clock cycles according to decoded instruction  
-2. **Combinational Datapath** – Performs ALU operations, routing between registers and memory
+## Input/Output
 
-Additional components include:
-- Instruction Register
-- Program Counter (PC)
-- ALU
-- Register File
-- PWM Generator
+- Inputs: 10 switches (SW), 4 pushbuttons (KEY)
+- Outputs: 10 LEDs (LEDR), 6 seven-segment displays (HEX0–HEX5), PWM output (GPIO pin)
+- Clock: 50 MHz on-board oscillator
 
 ## Features
 
-- Execution of instructions over multiple clock cycles using a custom FSM-based controller  
-- Support for a custom-defined instruction set architecture (ISA)  
-- PWM signal generation based on control inputs  
-- Full simulation support with waveform viewing in ModelSim  
-- Synthesizable and deployable on the DE2-115 FPGA board
-
-## FPGA I/O Mapping
-
-- Input: Switches and Pushbuttons  
-- Output: 7-segment display, LEDs, PWM (audio out)  
-- Clock and Reset: Derived from board defaults  
-- I/O mapping is described in the design specification PDF (see figures 2–6)
-
-## How to Run
-
-1. Compile all VHDL sources in `DUT/` using Quartus  
-2. Use `TB/` to simulate behavior in ModelSim  
-3. Load compiled design to DE2-115 via JTAG  
-4. Use switches to control input and observe outputs on display and PWM
+- Fully combinational datapath (with wrapper registers for timing analysis)
+- 16-bit custom ISA 
+- PWM output module integrated under ALUFN control
+- Quartus RTL viewer and resource usage per block
+- Critical path and Fmax analysis
+- Functional simulation in ModelSim
+- On-board verification using SignalTap
 
 ## Tools Used
 
-- **Language**: VHDL  
-- **Simulation**: ModelSim  
-- **Synthesis**: Intel Quartus Prime  
-- **Board**: DE2-115 FPGA Development Board
+- Intel Quartus Prime Lite Edition 21.1 (Intel FPGA IDE)
+- ModelSim 
+- SignalTap Logic Analyzer
+- DE2-115 FPGA board (Cyclone IV)
 
-## Documentation
+## References
 
-- [`FPGA based Digital Design.pdf`](FPGA%20based%20Digital%20Design.pdf) – full spec including architecture diagrams, ISA, and interface details
-
-## Author
-
-This project was developed as part of an academic lab in FPGA and digital system design.
+- LAB4 task definition.pdf – full assignment specification and ISA reference
