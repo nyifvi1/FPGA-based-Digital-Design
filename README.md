@@ -46,7 +46,7 @@ The system is composed of:
 
 ### DE2-115 FPGA Development Board
 
-![DE2-115 Board](https://www.researchgate.net/publication/323200897/figure/fig2/AS:735540924149760@1552378030524/Altera-DE2-115-FPGA-board.jpg)
+![DE2-115 Board](Altera-DE2-115-FPGA-board.png)
 
 *Figure: Terasic DE2-115 FPGA development board used in this project.*
 
