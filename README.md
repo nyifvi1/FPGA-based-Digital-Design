@@ -42,4 +42,4 @@ The system is composed of:
 
 ## References
 
-- LAB4 task definition.pdf – full assignment specification and ISA reference
+- [LAB4 task definition.pdf](https://github.com/nyifvi1/FPGA-based-Digital-Design/blob/main/FPGA%20based%20Digital%20Design.pdf) – full assignment specification and ISA reference
