@@ -4,7 +4,7 @@ This project implements a digital system on the DE2-115 FPGA board. The design i
 
 ## Project Structure
 
-- DUT – RTL design files of the digital system 
+- VHDL – RTL design files of the digital system 
 - TB – Testbench file used to simulate the full system
 - SIM – ModelSim scripts and waveform configurations
 - DOC – Project documentation: README and Lab4 report
