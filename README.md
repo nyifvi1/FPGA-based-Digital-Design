@@ -4,11 +4,13 @@ This project implements a digital system on the DE2-115 FPGA board. The design i
 
 ## Project Structure
 
-- VHDL – RTL design files of the digital system 
-- TB – Testbench file used to simulate the full system
-- SIM – ModelSim scripts and waveform configurations
-- DOC – Project documentation: README and Lab4 report
-- Quartus – .sof, .sdc, and SignalTap setups for hardware testing
+- **VHDL/** – RTL design files of the digital system.
+- **TB/** – Testbench files for simulating the system.
+- **SIM/** – ModelSim scripts and waveform configurations.
+- **output_files/** – Compiled files including .sof for FPGA programming.
+- **SDC/** – Synopsys Design Constraints files for timing analysis.
+- **STP/** – SignalTap configuration files for on-board debugging.
+- **DOC/** – Project documentation including the lab report and README.
 
 ## System Description
 
