@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Wed May 28 10:49:41 2025
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : LAB4
+Top-level Entity Name : GPIO_Interface
+Family : Cyclone IV E
+Total logic elements : 383
+    Total combinational functions : 383
+    Dedicated logic registers : 17
+Total registers : 17
+Total pins : 67
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
